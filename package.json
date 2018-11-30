@@ -1,0 +1,17 @@
+{
+  "name": "youtube-api",
+  "version": "1.0.0",
+  "description": "Practising javascript and API ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Trytova",
+  "license": "ISC",
+  "jshintConfig" : {
+    "esversion" : 6
+  },
+  "dependencies": {
+    "jshint": "^2.9.6"
+  }
+}

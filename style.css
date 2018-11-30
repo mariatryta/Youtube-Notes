@@ -1,0 +1,43 @@
+html,body{
+  padding:0;
+  margin:0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.nav-bar{
+  background: #512DA8;
+  height: 8vh;
+  text-align: right;
+}
+.log-btn{
+  border:none;
+  background-color: #FFC107;
+  padding: 10px 30px;
+  border-radius: 40px;
+  margin: 10px 20px 0 0;
+}
+
+.notes{
+  background-color: rgb(241, 237, 237);
+  width:50%;
+  height: 100vh;
+  overflow:scroll;
+
+
+}
+.youtube{
+  width:50%;
+  height: 100vh;
+  overflow:scroll;
+
+}
+.grid{
+  display: flex;
+  align-content: stretch;
+
+}
+
+#search-container, #video-container{
+  display: none;
+}

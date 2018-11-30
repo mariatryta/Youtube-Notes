@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Youtube Notes</title>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <button class="log-btn" id="authorize-button">Log In</button>
+    <button id="signout-button" style="display: none;">Sign Out</button>
+  </div>
+  <!-- Video section -->
+  <section class="grid">
+    <div class="youtube">
+      <div id="search-container" class="grid">
+        <div class="input-field">
+          <input type="text" placeholder="Enter Playlist Name" id="playlist-input">
+          <input type="submit" value="Search" class="search-btn">
+        </div>
+        <select class="select-field" name="Your playlists">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div id="video-container">
+        <p>hello</p>
+         <div id="player"></div>
+      </div>
+    </div>
+
+    <!-- Notes section -->
+    <div class="notes">
+      <div contenteditable="true">
+        This text can be edited by the user.
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
+    </div>
+  </section>  
+  
+  <script src="config.js"></script>
+  <script src="appNew.js"></script>
+  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+    onreadystatechange="if (this.readyState === 'complete') this.onload()">
+  </script>
+ 
+</body>
+
+</html>
